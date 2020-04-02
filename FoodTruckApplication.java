@@ -44,10 +44,10 @@ public class FoodTruckApplication {
 
                 if (maxNumber == -1) {
                     maxNumber = numRating;
-                    maxFoodTruck = allFoodTrucks[counter].displayFoodTruckInformation() + "\nHighest Rating: " + maxNumber;
+                    maxFoodTruck = "Highest Rated Food Truck:\n" + allFoodTrucks[counter].displayFoodTruckInformation();
                 } else if (maxNumber < numRating) {
                     maxNumber = numRating;
-                    maxFoodTruck = allFoodTrucks[counter].displayFoodTruckInformation() + "\nHighest Rating: " + maxNumber;
+                    maxFoodTruck = "Highest Rated Food Truck:\n" + allFoodTrucks[counter].displayFoodTruckInformation();
                 }
 
                 counter++;
@@ -61,7 +61,7 @@ public class FoodTruckApplication {
             }
 
             while (menuChoice) {
-                System.out.println("MENU:");
+                System.out.println("\nMENU:");
                 System.out.println("Press #1: List All Trucks");
                 System.out.println("Press #2: See Average Rating of Food Trucks");
                 System.out.println("Press #3: See Highest-Rated Food Truck");
@@ -79,7 +79,7 @@ public class FoodTruckApplication {
                         }
                         break;
                     case "2":
-                        System.out.println("Average: " + (sumNum / counter * 1.0));
+                        System.out.println("Average rating for all " + counter + " trucks is " + (sumNum / (counter * 1.0)));
                         break;
                     case "3":
                         System.out.println(maxFoodTruck);
@@ -91,6 +91,7 @@ public class FoodTruckApplication {
                         System.out.println("You have entered an invalid entry.");
                 }
             }
+            System.out.println("Have a great day!");
             keyboard.close();
             choice = false;
         }
