@@ -72,7 +72,11 @@ public class FoodTruckApplication {
                     case "1":
                         for (FoodTruck eachTruck : allFoodTrucks) {
                             try {
+                                // My way of formatting it, displaying the the Food Truck information and also checks
+                                // for any issues and will skip over the null elements in the array
                                 System.out.println(eachTruck.displayFoodTruckInformation());
+                                // This tests whether the toString method is called from the FoodTruck class is called
+                                System.out.println(eachTruck.toString());                       
                             } catch (Exception e) {
                                 continue;
                             }
@@ -90,6 +94,9 @@ public class FoodTruckApplication {
                     default:
                         System.out.println("You have entered an invalid entry.");
                 }
+            }
+            for (int i = 0; i < allFoodTrucks.length; i++){
+                System.out.println(allFoodTrucks.toString());
             }
             System.out.println("Have a great day!");
             keyboard.close();
