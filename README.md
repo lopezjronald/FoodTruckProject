@@ -12,3 +12,6 @@ The food truck app creates an object using FoodTruck and promts to input the nam
 
 ## Lessons Learned
 This project was pretty challenging. One area I was stuck in was generating an incremental number.This is my second attempt and being able to focus on the instructions and knowing what the application is supposed to do and the outcome it is expected to produce, it really helped me narrow my focus on meeting the requirements. 
+
+## Video Explanation
+https://www.youtube.com/watch?v=WkFcY35ezm0&feature=youtu.be
